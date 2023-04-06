@@ -275,6 +275,19 @@ var submitError = document.getElementById('submit-error');
 
 $("#submit-form").submit((e)=>{
     e.preventDefault()
+    const inputs = document.querySelectorAll("input");
+          var flag =0;
+          inputs.forEach((input) => {
+            if(input.value == "") 
+            { 
+              flag = 1;
+            }
+          })
+
+          if(flag==0){
+
+          
+
     $.ajax({
         url:"https://script.google.com/macros/s/AKfycby4BspZuy8qP5C_56SjW1OKCHsU8L88cugb6SRqR9XIvkz3bEge5rJekjtOFqjZBm_DPw/exec",
         data:$("#submit-form").serialize(),
@@ -289,6 +302,7 @@ $("#submit-form").submit((e)=>{
 
         }
     })
+  }
 })
 
 function validateName(){
