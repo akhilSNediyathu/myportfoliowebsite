@@ -1,0 +1,28 @@
+.frmstl input{
+background-color: rgb(241, 246, 246);
+  
+}
+.frmstl button{
+  background-color: rgb(19, 176, 24);
+  color: rgb(255, 255, 255);
+  border-radius: 50px;
+  border: none;
+  align-items: center;
+  width: 130px;
+  height: 40px;
+  font-weight: bold;
+
+}
+.frmstl button:hover{
+  background-color: black;
+  color: aqua;
+}
+.frmstl label{
+  font-weight: bold;
+  font-style: italic;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: rgb(33, 139, 42);
+}
+.frmstl textarea{
+  background-color:#ededed ;
+}
